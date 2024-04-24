@@ -233,6 +233,65 @@ body {
   height: 100%;
   aspect-ratio: 1/1
 }
+.footer {
+  position: relative;
+  border: 8px solid #000;
+  background: linear-gradient(270deg,#280808 0,#8e1d1c 28.05%,#280808 100%);
+  box-shadow: 0 9px 0 0 #000
+}
+.footer__column {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  gap: .9375rem;
+  max-width: 50%
+}
+.footer__title {
+  text-shadow: 0 8px 0 #000;
+  -webkit-text-stroke-width: 9;
+  -webkit-text-stroke-color: #000;
+  font-family: Ahsing;
+  font-size: 4.75rem;
+  display: inline-block;
+  line-height: 1.3;
+  padding-left: .9375rem;
+  padding-right: .9375rem
+}
+.footer__text {
+  opacity: .2;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.4
+}
+.footer__decor-img {
+  position: absolute;
+  top: -30%;
+  left: 25%;
+  aspect-ratio: 72/67
+}
+.footer__social {
+  max-width: 65%;
+  position: relative;
+  z-index: 5
+}
+.footer__image-dog {
+  height: 120%;
+  position: absolute;
+  bottom: 0;
+  right: -25%;
+  aspect-ratio: 450/500;
+  z-index: 2
+}
+.footer__image-decor {
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+  aspect-ratio: 1/1;
+  z-index: 1
+}
+.footer__copy-link {
+  transition: color .5s
+}
 [class*=decor] {
   pointer-events: none
 }
@@ -266,6 +325,9 @@ body {
   top: -15%;
   left: 25%
 }
+.title {
+  font-weight: 700
+}
 .subtitle {
   text-shadow: 0 8px 0 #000;
   -webkit-text-stroke-width: 9;
@@ -289,10 +351,6 @@ body {
 }
 .hero__title-block {
   position: relative
-}
-.hero__title {
-  color: #fff;
-  font-weight: 700
 }
 .hero__highligh {
   font-family: Ahsing;
@@ -353,6 +411,7 @@ body {
   padding-right: 1.5625rem
 }
 .social__item {
+  max-width: 8.75rem;
   -webkit-filter: drop-shadow(4px 7px 0 #000);
   filter: drop-shadow(4px 7px 0 #000);
   transition: all .5s
@@ -533,8 +592,77 @@ body {
   right: 12%;
   z-index: 6
 }
+.tokenomics__img {
+  top: -48%;
+  left: 71%;
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg)
+}
+.strip {
+  margin-top: -6.25rem
+}
+.tokenomics__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end
+}
+.item-tokenomics {
+  background-color: #fff;
+  color: #000;
+  border-radius: 1.9375rem;
+  border: 1.278px solid #000;
+  box-shadow: -10px -11px 4px 0 rgba(0,0,0,.25) inset,7.667px 7.667px 0 0 #000
+}
+.item-tokenomics__header {
+  display: grid;
+  grid-template-columns: 1fr .2fr;
+  position: relative
+}
+.item-tokenomics__title {
+  font-family: "Work Sans";
+  font-weight: 600;
+  margin-bottom: 1.375rem;
+  max-width: 60%
+}
+.item-tokenomics__decor {
+  position: absolute;
+  top: -110%;
+  right: -15%
+}
+.item-tokenomics__img {
+  aspect-ratio: 1/1
+}
+.item-tokenomics__body {
+  display: grid
+}
+.item-tokenomics__body * {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1.5rem
+}
+.item-tokenomics__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: .9375rem;
+  border: 4px solid var(--primary-text,#000);
+  background-color: #ffebef;
+  box-shadow: 2px 2px 0 0 #000
+}
+.item-tokenomics__row--highlight {
+  background-color: #e84341
+}
+.item-tokenomics__row *:nth-child(1) {
+  font-weight: 700
+}
 @media (min-width:47.99875em) {
   .buy {
+    background-image: url(img/lines.svg);
+    background-repeat: no-repeat;
+    background-position: center
+  }
+  .booswap {
     background-image: url(img/lines.svg);
     background-repeat: no-repeat;
     background-position: center
@@ -556,6 +684,9 @@ body {
   .item-buy__swap-text {
     font-size: 1.25rem
   }
+  .item-tokenomics__decor {
+    max-width: 15.625rem
+  }
 }
 @media (min-width:79.375em) {
   .menu__list {
@@ -567,6 +698,18 @@ body {
     -webkit-column-gap: 2.1875rem;
     -moz-column-gap: 2.1875rem;
     column-gap: 2.1875rem
+  }
+  .footer {
+    padding-top: 6.25rem
+  }
+  .footer {
+    padding-bottom: 6.25rem
+  }
+  .footer__decor-img {
+    max-width: 2.5rem
+  }
+  .footer__img {
+    max-width: 25rem
   }
   .page__hero {
     padding-top: 7.5rem
@@ -586,11 +729,20 @@ body {
   .page__booswap {
     padding-bottom: 4.6875rem
   }
+  .page__tokenomics {
+    padding-top: 4.6875rem
+  }
+  .page__tokenomics {
+    padding-bottom: 9.375rem
+  }
   .strip--top-left {
     margin-bottom: 6.25rem
   }
   .img-decor {
     max-width: 15.625rem
+  }
+  .title {
+    font-size: 4.5rem
   }
   .subtitle {
     font-size: 7.75rem
@@ -609,9 +761,6 @@ body {
   }
   .hero__title-block:not(:last-child) {
     margin-bottom: 2.8125rem
-  }
-  .hero__title {
-    font-size: 4.5rem
   }
   .hero__highligh {
     font-size: 15.75rem
@@ -708,8 +857,44 @@ body {
   .booswap img:nth-child(5) {
     max-width: 16.875rem
   }
+  .tokenomics__list {
+    margin-top: 13.75rem
+  }
+  .tokenomics__list {
+    gap: 7.1875rem
+  }
+  .item-tokenomics {
+    padding: 2.5rem
+  }
+  .item-tokenomics__title {
+    font-size: 3.25rem
+  }
+  .item-tokenomics__body {
+    gap: 1.75rem
+  }
+  .item-tokenomics__row {
+    padding: 1.875rem
+  }
+  .item-tokenomics__row *:nth-child(1) {
+    font-size: 2.25rem
+  }
+  .item-tokenomics__row *:nth-child(2) {
+    font-size: 1.5rem
+  }
 }
 @media (max-width:20em) {
+  .footer {
+    padding-top: 1.875rem
+  }
+  .footer {
+    padding-bottom: 1.875rem
+  }
+  .footer__decor-img {
+    max-width: 2.5rem
+  }
+  .footer__img {
+    max-width: 18.75rem
+  }
   .page__hero {
     padding-top: 4.375rem
   }
@@ -728,11 +913,20 @@ body {
   .page__booswap {
     padding-bottom: 1.875rem
   }
+  .page__tokenomics {
+    padding-top: 1.875rem
+  }
+  .page__tokenomics {
+    padding-bottom: 4.375rem
+  }
   .strip--top-left {
     margin-bottom: 3.125rem
   }
   .img-decor {
     max-width: 3.125rem
+  }
+  .title {
+    font-size: 2.25rem
   }
   .subtitle {
     font-size: 2.25rem
@@ -751,9 +945,6 @@ body {
   }
   .hero__title-block:not(:last-child) {
     margin-bottom: 1.5625rem
-  }
-  .hero__title {
-    font-size: 2.25rem
   }
   .hero__highligh {
     font-size: 6.25rem
@@ -850,9 +1041,43 @@ body {
   .booswap img:nth-child(5) {
     max-width: 4.6875rem
   }
+  .tokenomics__list {
+    margin-top: 2.5rem
+  }
+  .tokenomics__list {
+    gap: 1.25rem
+  }
+  .item-tokenomics {
+    padding: .9375rem
+  }
+  .item-tokenomics__title {
+    font-size: 2.25rem
+  }
+  .item-tokenomics__body {
+    gap: .9375rem
+  }
+  .item-tokenomics__row {
+    padding: .9375rem
+  }
+  .item-tokenomics__row *:nth-child(1) {
+    font-size: 1.625rem
+  }
+  .item-tokenomics__row *:nth-child(2) {
+    font-size: 1.125rem
+  }
 }
 @media (max-width:112.5em) {
   .hero__decor {
+    display: none
+  }
+}
+@media (max-width:79.375em) {
+  .footer__text {
+    opacity: 1
+  }
+}
+@media (max-width:73.75em) {
+  .footer__decor-img {
     display: none
   }
 }
@@ -863,6 +1088,26 @@ body {
   .header {
     padding-top: 0;
     padding-bottom: 0
+  }
+  .footer {
+    text-align: center
+  }
+  .footer__column {
+    max-width: 100%;
+    flex-direction: column
+  }
+  .footer__text {
+    max-width: 70%;
+    margin: auto
+  }
+  .footer__social {
+    max-width: 100%
+  }
+  .footer__image-dog {
+    display: none
+  }
+  .footer__image-decor {
+    display: none
   }
   .social__list {
     justify-content: center
@@ -877,6 +1122,12 @@ body {
     display: none
   }
   .booswap img:nth-child(5) {
+    display: none
+  }
+  .tokenomics__list {
+    grid-template-columns: 1fr
+  }
+  .item-tokenomics__decor {
     display: none
   }
 }
@@ -917,6 +1168,9 @@ body {
   }
   .item-buy__swap-text {
     font-size: .875rem
+  }
+  .item-tokenomics__decor {
+    max-width: 9.375rem
   }
 }
 @media (max-width:47.99875em) {
@@ -1094,6 +1348,46 @@ body {
   }
 }
 @media (min-width:20em) and (max-width:79.375em) {
+  @supports (padding-top:clamp(1.875rem ,0.4013157895rem + 7.3684210526vw ,6.25rem)) {
+    .footer {
+      padding-top: clamp(1.875rem ,.4013157895rem + 7.3684210526vw ,6.25rem)
+    }
+  }
+  @supports not (padding-top:clamp(1.875rem ,0.4013157895rem + 7.3684210526vw ,6.25rem)) {
+    .footer {
+      padding-top: calc(1.875rem + 4.375 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (padding-bottom:clamp(1.875rem ,0.4013157895rem + 7.3684210526vw ,6.25rem)) {
+    .footer {
+      padding-bottom: clamp(1.875rem ,.4013157895rem + 7.3684210526vw ,6.25rem)
+    }
+  }
+  @supports not (padding-bottom:clamp(1.875rem ,0.4013157895rem + 7.3684210526vw ,6.25rem)) {
+    .footer {
+      padding-bottom: calc(1.875rem + 4.375 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (max-width:clamp(2.5rem ,2.5rem + 0vw ,2.5rem)) {
+    .footer__decor-img {
+      max-width: clamp(2.5rem ,2.5rem + 0 ,2.5rem)
+    }
+  }
+  @supports not (max-width:clamp(2.5rem ,2.5rem + 0vw ,2.5rem)) {
+    .footer__decor-img {
+      max-width: calc(2.5rem + 0 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (max-width:clamp(18.75rem ,16.6447368421rem + 10.5263157895vw ,25rem)) {
+    .footer__img {
+      max-width: clamp(18.75rem ,16.6447368421rem + 10.5263157895vw ,25rem)
+    }
+  }
+  @supports not (max-width:clamp(18.75rem ,16.6447368421rem + 10.5263157895vw ,25rem)) {
+    .footer__img {
+      max-width: calc(18.75rem + 6.25 * (100vw - 20rem)/ 59.375)
+    }
+  }
   @supports (padding-top:clamp(4.375rem ,3.3223684211rem + 5.2631578947vw ,7.5rem)) {
     .page__hero {
       padding-top: clamp(4.375rem ,3.3223684211rem + 5.2631578947vw ,7.5rem)
@@ -1154,6 +1448,26 @@ body {
       padding-bottom: calc(1.875rem + 2.8125 * (100vw - 20rem)/ 59.375)
     }
   }
+  @supports (padding-top:clamp(1.875rem ,0.9276315789rem + 4.7368421053vw ,4.6875rem)) {
+    .page__tokenomics {
+      padding-top: clamp(1.875rem ,.9276315789rem + 4.7368421053vw ,4.6875rem)
+    }
+  }
+  @supports not (padding-top:clamp(1.875rem ,0.9276315789rem + 4.7368421053vw ,4.6875rem)) {
+    .page__tokenomics {
+      padding-top: calc(1.875rem + 2.8125 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (padding-bottom:clamp(4.375rem ,2.6907894737rem + 8.4210526316vw ,9.375rem)) {
+    .page__tokenomics {
+      padding-bottom: clamp(4.375rem ,2.6907894737rem + 8.4210526316vw ,9.375rem)
+    }
+  }
+  @supports not (padding-bottom:clamp(4.375rem ,2.6907894737rem + 8.4210526316vw ,9.375rem)) {
+    .page__tokenomics {
+      padding-bottom: calc(4.375rem + 5 * (100vw - 20rem)/ 59.375)
+    }
+  }
   @supports (margin-bottom:clamp(3.125rem ,2.0723684211rem + 5.2631578947vw ,6.25rem)) {
     .strip--top-left {
       margin-bottom: clamp(3.125rem ,2.0723684211rem + 5.2631578947vw ,6.25rem)
@@ -1172,6 +1486,16 @@ body {
   @supports not (max-width:clamp(3.125rem ,-1.0855263158rem + 21.0526315789vw ,15.625rem)) {
     .img-decor {
       max-width: calc(3.125rem + 12.5 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (font-size:clamp(2.25rem ,1.4921052632rem + 3.7894736842vw ,4.5rem)) {
+    .title {
+      font-size: clamp(2.25rem ,1.4921052632rem + 3.7894736842vw ,4.5rem)
+    }
+  }
+  @supports not (font-size:clamp(2.25rem ,1.4921052632rem + 3.7894736842vw ,4.5rem)) {
+    .title {
+      font-size: calc(2.25rem + 2.25 * (100vw - 20rem)/ 59.375)
     }
   }
   @supports (font-size:clamp(2.25rem ,0.3973684211rem + 9.2631578947vw ,7.75rem)) {
@@ -1232,16 +1556,6 @@ body {
   @supports not (margin-bottom:clamp(1.5625rem ,1.1414473684rem + 2.1052631579vw ,2.8125rem)) {
     .hero__title-block:not(:last-child) {
       margin-bottom: calc(1.5625rem + 1.25 * (100vw - 20rem)/ 59.375)
-    }
-  }
-  @supports (font-size:clamp(2.25rem ,1.4921052632rem + 3.7894736842vw ,4.5rem)) {
-    .hero__title {
-      font-size: clamp(2.25rem ,1.4921052632rem + 3.7894736842vw ,4.5rem)
-    }
-  }
-  @supports not (font-size:clamp(2.25rem ,1.4921052632rem + 3.7894736842vw ,4.5rem)) {
-    .hero__title {
-      font-size: calc(2.25rem + 2.25 * (100vw - 20rem)/ 59.375)
     }
   }
   @supports (font-size:clamp(6.25rem ,3.05rem + 16vw ,15.75rem)) {
@@ -1558,6 +1872,86 @@ body {
       max-width: calc(4.6875rem + 12.1875 * (100vw - 20rem)/ 59.375)
     }
   }
+  @supports (margin-top:clamp(2.5rem ,-1.2894736842rem + 18.9473684211vw ,13.75rem)) {
+    .tokenomics__list {
+      margin-top: clamp(2.5rem ,-1.2894736842rem + 18.9473684211vw ,13.75rem)
+    }
+  }
+  @supports not (margin-top:clamp(2.5rem ,-1.2894736842rem + 18.9473684211vw ,13.75rem)) {
+    .tokenomics__list {
+      margin-top: calc(2.5rem + 11.25 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (gap:clamp(1.25rem ,-0.75rem + 10vw ,7.1875rem)) {
+    .tokenomics__list {
+      gap: clamp(1.25rem ,-.75rem + 10vw ,7.1875rem)
+    }
+  }
+  @supports not (gap:clamp(1.25rem ,-0.75rem + 10vw ,7.1875rem)) {
+    .tokenomics__list {
+      gap: calc(1.25rem + 5.9375 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (padding:clamp(0.9375rem ,0.4111842105rem + 2.6315789474vw ,2.5rem)) {
+    .item-tokenomics {
+      padding: clamp(.9375rem ,.4111842105rem + 2.6315789474vw ,2.5rem)
+    }
+  }
+  @supports not (padding:clamp(0.9375rem ,0.4111842105rem + 2.6315789474vw ,2.5rem)) {
+    .item-tokenomics {
+      padding: calc(.9375rem + 1.5625 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (font-size:clamp(2.25rem ,1.9131578947rem + 1.6842105263vw ,3.25rem)) {
+    .item-tokenomics__title {
+      font-size: clamp(2.25rem ,1.9131578947rem + 1.6842105263vw ,3.25rem)
+    }
+  }
+  @supports not (font-size:clamp(2.25rem ,1.9131578947rem + 1.6842105263vw ,3.25rem)) {
+    .item-tokenomics__title {
+      font-size: calc(2.25rem + 1 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (gap:clamp(0.9375rem ,0.6638157895rem + 1.3684210526vw ,1.75rem)) {
+    .item-tokenomics__body {
+      gap: clamp(.9375rem ,.6638157895rem + 1.3684210526vw ,1.75rem)
+    }
+  }
+  @supports not (gap:clamp(0.9375rem ,0.6638157895rem + 1.3684210526vw ,1.75rem)) {
+    .item-tokenomics__body {
+      gap: calc(.9375rem + .8125 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (padding:clamp(0.9375rem ,0.6217105263rem + 1.5789473684vw ,1.875rem)) {
+    .item-tokenomics__row {
+      padding: clamp(.9375rem ,.6217105263rem + 1.5789473684vw ,1.875rem)
+    }
+  }
+  @supports not (padding:clamp(0.9375rem ,0.6217105263rem + 1.5789473684vw ,1.875rem)) {
+    .item-tokenomics__row {
+      padding: calc(.9375rem + .9375 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (font-size:clamp(1.625rem ,1.4144736842rem + 1.0526315789vw ,2.25rem)) {
+    .item-tokenomics__row *:nth-child(1) {
+      font-size: clamp(1.625rem ,1.4144736842rem + 1.0526315789vw ,2.25rem)
+    }
+  }
+  @supports not (font-size:clamp(1.625rem ,1.4144736842rem + 1.0526315789vw ,2.25rem)) {
+    .item-tokenomics__row *:nth-child(1) {
+      font-size: calc(1.625rem + .625 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (font-size:clamp(1.125rem ,0.9986842105rem + 0.6315789474vw ,1.5rem)) {
+    .item-tokenomics__row *:nth-child(2) {
+      font-size: clamp(1.125rem ,.9986842105rem + .6315789474vw ,1.5rem)
+    }
+  }
+  @supports not (font-size:clamp(1.125rem ,0.9986842105rem + 0.6315789474vw ,1.5rem)) {
+    .item-tokenomics__row *:nth-child(2) {
+      font-size: calc(1.125rem + .375 * (100vw - 20rem)/ 59.375)
+    }
+  }
 }
 @media (min-width:61.24875em) and (max-width:77.5em) {
   @supports (margin-top:clamp(-7.5rem ,28.2664797996rem + -46.1502965157vw ,0.0000000625rem)) {
@@ -1612,6 +2006,16 @@ body {
       font-size: calc(.875rem + .375 * (100vw - 48.06125rem)/ 29.43875)
     }
   }
+  @supports (max-width:clamp(9.375rem ,-0.8286537727rem + 21.230520997vw ,15.625rem)) {
+    .item-tokenomics__decor {
+      max-width: clamp(9.375rem ,-.8286537727rem + 21.230520997vw ,15.625rem)
+    }
+  }
+  @supports not (max-width:clamp(9.375rem ,-0.8286537727rem + 21.230520997vw ,15.625rem)) {
+    .item-tokenomics__decor {
+      max-width: calc(9.375rem + 6.25 * (100vw - 48.06125rem)/ 29.43875)
+    }
+  }
 }
 @media (any-hover:hover) {
   .button:hover {
@@ -1626,6 +2030,9 @@ body {
     color: #fff
   }
   .menu__link:hover {
+    color: #e84341
+  }
+  .footer__copy-link:hover {
     color: #e84341
   }
   .social__item:hover {
