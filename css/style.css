@@ -304,7 +304,6 @@ body {
   box-shadow: 0 9px 0 0 #000;
   -webkit-transform: rotate(-4deg);
   transform: rotate(-4deg);
-  margin-top: -7.5rem;
   margin-left: -1.25rem;
   margin-right: -1.25rem;
   position: relative;
@@ -392,7 +391,7 @@ body {
 }
 .hero__decor {
   position: absolute;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
   height: 100%;
   aspect-ratio: 1920/1300;
@@ -411,7 +410,6 @@ body {
   padding-right: 1.5625rem
 }
 .social__item {
-  max-width: 8.75rem;
   -webkit-filter: drop-shadow(4px 7px 0 #000);
   filter: drop-shadow(4px 7px 0 #000);
   transition: all .5s
@@ -598,9 +596,6 @@ body {
   -webkit-transform: rotate(-10deg);
   transform: rotate(-10deg)
 }
-.strip {
-  margin-top: -6.25rem
-}
 .tokenomics__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -627,7 +622,8 @@ body {
 .item-tokenomics__decor {
   position: absolute;
   top: -110%;
-  right: -15%
+  right: -15%;
+  z-index: 25
 }
 .item-tokenomics__img {
   aspect-ratio: 1/1
@@ -669,8 +665,17 @@ body {
   }
 }
 @media (min-width:77.5em) {
+  .strip {
+    margin-top: -9.375rem
+  }
+  .strip {
+    margin-bottom: 6.25rem
+  }
   .strip--top-left {
-    margin-top: -7.5rem
+    margin-top: -9.375rem
+  }
+  .strip--top-left {
+    margin-bottom: 6.25rem
   }
   .what__img {
     padding-top: 6.875rem
@@ -734,9 +739,6 @@ body {
   }
   .page__tokenomics {
     padding-bottom: 9.375rem
-  }
-  .strip--top-left {
-    margin-bottom: 6.25rem
   }
   .img-decor {
     max-width: 15.625rem
@@ -816,7 +818,7 @@ body {
     padding-right: 2.5rem
   }
   .buy-list {
-    padding-top: 6.25rem
+    padding-top: 4.375rem
   }
   .item-buy {
     padding-top: 5.3125rem
@@ -836,15 +838,6 @@ body {
   .item-buy__number {
     max-width: 6.25rem
   }
-  .booswap__strip {
-    margin-bottom: 7.5rem
-  }
-  .booswap {
-    margin-top: 3.4375rem
-  }
-  .booswap {
-    margin-bottom: 3.4375rem
-  }
   .booswap img:nth-child(2) {
     max-width: 16.875rem
   }
@@ -856,9 +849,6 @@ body {
   }
   .booswap img:nth-child(5) {
     max-width: 16.875rem
-  }
-  .tokenomics__list {
-    margin-top: 13.75rem
   }
   .tokenomics__list {
     gap: 7.1875rem
@@ -919,9 +909,6 @@ body {
   .page__tokenomics {
     padding-bottom: 4.375rem
   }
-  .strip--top-left {
-    margin-bottom: 3.125rem
-  }
   .img-decor {
     max-width: 3.125rem
   }
@@ -962,7 +949,7 @@ body {
     padding-bottom: 1.25rem
   }
   .social__item {
-    width: 2.5rem
+    width: 2rem
   }
   .what__container {
     -webkit-column-gap: .9375rem;
@@ -1000,7 +987,7 @@ body {
     padding-right: .625rem
   }
   .buy-list {
-    padding-top: 2.1875rem
+    padding-top: .0000000625rem
   }
   .item-buy {
     padding-top: 3.125rem
@@ -1020,15 +1007,6 @@ body {
   .item-buy__number {
     max-width: 4.6875rem
   }
-  .booswap__strip {
-    margin-bottom: 1.875rem
-  }
-  .booswap {
-    margin-top: 4.6875rem
-  }
-  .booswap {
-    margin-bottom: 4.6875rem
-  }
   .booswap img:nth-child(2) {
     max-width: 4.6875rem
   }
@@ -1040,9 +1018,6 @@ body {
   }
   .booswap img:nth-child(5) {
     max-width: 4.6875rem
-  }
-  .tokenomics__list {
-    margin-top: 2.5rem
   }
   .tokenomics__list {
     gap: 1.25rem
@@ -1132,8 +1107,17 @@ body {
   }
 }
 @media (max-width:61.24875em) {
+  .strip {
+    margin-top: .0000000625rem
+  }
+  .strip {
+    margin-bottom: 3.125rem
+  }
   .strip--top-left {
     margin-top: .0000000625rem
+  }
+  .strip--top-left {
+    margin-bottom: 3.125rem
   }
 }
 @media (max-width:61.25em) {
@@ -1298,6 +1282,12 @@ body {
 @media (max-width:47.99875em) and (any-hover:none) {
   .icon-menu {
     cursor: default
+  }
+}
+@media (max-width:29.99875em) {
+  .footer__text {
+    max-width: 100%;
+    margin: auto
   }
 }
 @media (max-width:47.99875em) and (min-width:79.375em) {
@@ -1468,16 +1458,6 @@ body {
       padding-bottom: calc(4.375rem + 5 * (100vw - 20rem)/ 59.375)
     }
   }
-  @supports (margin-bottom:clamp(3.125rem ,2.0723684211rem + 5.2631578947vw ,6.25rem)) {
-    .strip--top-left {
-      margin-bottom: clamp(3.125rem ,2.0723684211rem + 5.2631578947vw ,6.25rem)
-    }
-  }
-  @supports not (margin-bottom:clamp(3.125rem ,2.0723684211rem + 5.2631578947vw ,6.25rem)) {
-    .strip--top-left {
-      margin-bottom: calc(3.125rem + 3.125 * (100vw - 20rem)/ 59.375)
-    }
-  }
   @supports (max-width:clamp(3.125rem ,-1.0855263158rem + 21.0526315789vw ,15.625rem)) {
     .img-decor {
       max-width: clamp(3.125rem ,-1.0855263158rem + 21.0526315789vw ,15.625rem)
@@ -1608,14 +1588,14 @@ body {
       padding-bottom: calc(1.25rem + 2.6875 * (100vw - 20rem)/ 59.375)
     }
   }
-  @supports (width:clamp(2.5rem ,0.8157894737rem + 8.4210526316vw ,7.5rem)) {
+  @supports (width:clamp(2rem ,0.1473684211rem + 9.2631578947vw ,7.5rem)) {
     .social__item {
-      width: clamp(2.5rem ,.8157894737rem + 8.4210526316vw ,7.5rem)
+      width: clamp(2rem ,.1473684211rem + 9.2631578947vw ,7.5rem)
     }
   }
-  @supports not (width:clamp(2.5rem ,0.8157894737rem + 8.4210526316vw ,7.5rem)) {
+  @supports not (width:clamp(2rem ,0.1473684211rem + 9.2631578947vw ,7.5rem)) {
     .social__item {
-      width: calc(2.5rem + 5 * (100vw - 20rem)/ 59.375)
+      width: calc(2rem + 5.5 * (100vw - 20rem)/ 59.375)
     }
   }
   @supports ((-moz-column-gap:clamp(0.9375rem ,0.6217105263rem + 1.5789473684vw ,1.875rem)) or (column-gap:clamp(0.9375rem ,0.6217105263rem + 1.5789473684vw ,1.875rem))) {
@@ -1732,14 +1712,14 @@ body {
       padding-right: calc(.625rem + 1.875 * (100vw - 20rem)/ 59.375)
     }
   }
-  @supports (padding-top:clamp(2.1875rem ,0.8190789474rem + 6.8421052632vw ,6.25rem)) {
+  @supports (padding-top:clamp(0.0000000625rem ,-1.473684127rem + 7.3684209474vw ,4.375rem)) {
     .buy-list {
-      padding-top: clamp(2.1875rem ,.8190789474rem + 6.8421052632vw ,6.25rem)
+      padding-top: clamp(.0000000625rem ,-1.473684127rem + 7.3684209474vw ,4.375rem)
     }
   }
-  @supports not (padding-top:clamp(2.1875rem ,0.8190789474rem + 6.8421052632vw ,6.25rem)) {
+  @supports not (padding-top:clamp(0.0000000625rem ,-1.473684127rem + 7.3684209474vw ,4.375rem)) {
     .buy-list {
-      padding-top: calc(2.1875rem + 4.0625 * (100vw - 20rem)/ 59.375)
+      padding-top: calc(.0000000625rem + 4.3749999375 * (100vw - 20rem)/ 59.375)
     }
   }
   @supports (padding-top:clamp(3.125rem ,2.3881578947rem + 3.6842105263vw ,5.3125rem)) {
@@ -1802,36 +1782,6 @@ body {
       max-width: calc(4.6875rem + 1.5625 * (100vw - 20rem)/ 59.375)
     }
   }
-  @supports (margin-bottom:clamp(1.875rem ,-0.0197368421rem + 9.4736842105vw ,7.5rem)) {
-    .booswap__strip {
-      margin-bottom: clamp(1.875rem ,-.0197368421rem + 9.4736842105vw ,7.5rem)
-    }
-  }
-  @supports not (margin-bottom:clamp(1.875rem ,-0.0197368421rem + 9.4736842105vw ,7.5rem)) {
-    .booswap__strip {
-      margin-bottom: calc(1.875rem + 5.625 * (100vw - 20rem)/ 59.375)
-    }
-  }
-  @supports (margin-top:clamp(3.4375rem ,5.1085526316rem + -2.1052631579vw ,4.6875rem)) {
-    .booswap {
-      margin-top: clamp(3.4375rem ,5.1085526316rem + -2.1052631579vw ,4.6875rem)
-    }
-  }
-  @supports not (margin-top:clamp(3.4375rem ,5.1085526316rem + -2.1052631579vw ,4.6875rem)) {
-    .booswap {
-      margin-top: calc(4.6875rem + -1.25 * (100vw - 20rem)/ 59.375)
-    }
-  }
-  @supports (margin-bottom:clamp(3.4375rem ,5.1085526316rem + -2.1052631579vw ,4.6875rem)) {
-    .booswap {
-      margin-bottom: clamp(3.4375rem ,5.1085526316rem + -2.1052631579vw ,4.6875rem)
-    }
-  }
-  @supports not (margin-bottom:clamp(3.4375rem ,5.1085526316rem + -2.1052631579vw ,4.6875rem)) {
-    .booswap {
-      margin-bottom: calc(4.6875rem + -1.25 * (100vw - 20rem)/ 59.375)
-    }
-  }
   @supports (max-width:clamp(4.6875rem ,0.5822368421rem + 20.5263157895vw ,16.875rem)) {
     .booswap img:nth-child(2) {
       max-width: clamp(4.6875rem ,.5822368421rem + 20.5263157895vw ,16.875rem)
@@ -1870,16 +1820,6 @@ body {
   @supports not (max-width:clamp(4.6875rem ,0.5822368421rem + 20.5263157895vw ,16.875rem)) {
     .booswap img:nth-child(5) {
       max-width: calc(4.6875rem + 12.1875 * (100vw - 20rem)/ 59.375)
-    }
-  }
-  @supports (margin-top:clamp(2.5rem ,-1.2894736842rem + 18.9473684211vw ,13.75rem)) {
-    .tokenomics__list {
-      margin-top: clamp(2.5rem ,-1.2894736842rem + 18.9473684211vw ,13.75rem)
-    }
-  }
-  @supports not (margin-top:clamp(2.5rem ,-1.2894736842rem + 18.9473684211vw ,13.75rem)) {
-    .tokenomics__list {
-      margin-top: calc(2.5rem + 11.25 * (100vw - 20rem)/ 59.375)
     }
   }
   @supports (gap:clamp(1.25rem ,-0.75rem + 10vw ,7.1875rem)) {
@@ -1954,14 +1894,44 @@ body {
   }
 }
 @media (min-width:61.24875em) and (max-width:77.5em) {
-  @supports (margin-top:clamp(-7.5rem ,28.2664797996rem + -46.1502965157vw ,0.0000000625rem)) {
-    .strip--top-left {
-      margin-top: clamp(-7.5rem ,28.2664797996rem + -46.1502965157vw ,.0000000625rem)
+  @supports (margin-top:clamp(-9.375rem ,35.333099675rem + -57.6878705484vw ,0.0000000625rem)) {
+    .strip {
+      margin-top: clamp(-9.375rem ,35.333099675rem + -57.6878705484vw ,.0000000625rem)
     }
   }
-  @supports not (margin-top:clamp(-7.5rem ,28.2664797996rem + -46.1502965157vw ,0.0000000625rem)) {
+  @supports not (margin-top:clamp(-9.375rem ,35.333099675rem + -57.6878705484vw ,0.0000000625rem)) {
+    .strip {
+      margin-top: calc(.0000000625rem + -9.3750000625 * (100vw - 61.24875rem)/ 16.25125)
+    }
+  }
+  @supports (margin-bottom:clamp(3.125rem ,-8.6526997923rem + 19.2292900546vw ,6.25rem)) {
+    .strip {
+      margin-bottom: clamp(3.125rem ,-8.6526997923rem + 19.2292900546vw ,6.25rem)
+    }
+  }
+  @supports not (margin-bottom:clamp(3.125rem ,-8.6526997923rem + 19.2292900546vw ,6.25rem)) {
+    .strip {
+      margin-bottom: calc(3.125rem + 3.125 * (100vw - 61.24875rem)/ 16.25125)
+    }
+  }
+  @supports (margin-top:clamp(-9.375rem ,35.333099675rem + -57.6878705484vw ,0.0000000625rem)) {
     .strip--top-left {
-      margin-top: calc(.0000000625rem + -7.5000000625 * (100vw - 61.24875rem)/ 16.25125)
+      margin-top: clamp(-9.375rem ,35.333099675rem + -57.6878705484vw ,.0000000625rem)
+    }
+  }
+  @supports not (margin-top:clamp(-9.375rem ,35.333099675rem + -57.6878705484vw ,0.0000000625rem)) {
+    .strip--top-left {
+      margin-top: calc(.0000000625rem + -9.3750000625 * (100vw - 61.24875rem)/ 16.25125)
+    }
+  }
+  @supports (margin-bottom:clamp(3.125rem ,-8.6526997923rem + 19.2292900546vw ,6.25rem)) {
+    .strip--top-left {
+      margin-bottom: clamp(3.125rem ,-8.6526997923rem + 19.2292900546vw ,6.25rem)
+    }
+  }
+  @supports not (margin-bottom:clamp(3.125rem ,-8.6526997923rem + 19.2292900546vw ,6.25rem)) {
+    .strip--top-left {
+      margin-bottom: calc(3.125rem + 3.125 * (100vw - 61.24875rem)/ 16.25125)
     }
   }
 }
