@@ -640,6 +640,7 @@ body {
   max-width: 37.3125rem;
   aspect-ratio: 597/959;
   margin: auto;
+  border-radius: 2.1875rem;
   -webkit-transform: translate(0,10%);
   transform: translate(0,10%);
   opacity: 0;
