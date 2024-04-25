@@ -798,6 +798,9 @@ body {
   .what__img {
     padding-top: 6.875rem
   }
+  .what__img {
+    padding-bottom: 6.875rem
+  }
   .what__label {
     font-size: 3.6875rem
   }
@@ -1263,7 +1266,10 @@ body {
     padding-bottom: 4.375rem
   }
   .what__img {
-    padding-top: .625rem
+    padding-top: 2.5rem
+  }
+  .what__img {
+    padding-bottom: 2.5rem
   }
   .what__label {
     font-size: 1.625rem
@@ -2036,14 +2042,24 @@ body {
       padding-bottom: calc(4.375rem + 5 * (100vw - 48.06125rem)/ 29.43875)
     }
   }
-  @supports (padding-top:clamp(0.625rem ,-9.5786537727rem + 21.230520997vw ,6.875rem)) {
+  @supports (padding-top:clamp(2.5rem ,-4.6425576409rem + 14.8613646979vw ,6.875rem)) {
     .what__img {
-      padding-top: clamp(.625rem ,-9.5786537727rem + 21.230520997vw ,6.875rem)
+      padding-top: clamp(2.5rem ,-4.6425576409rem + 14.8613646979vw ,6.875rem)
     }
   }
-  @supports not (padding-top:clamp(0.625rem ,-9.5786537727rem + 21.230520997vw ,6.875rem)) {
+  @supports not (padding-top:clamp(2.5rem ,-4.6425576409rem + 14.8613646979vw ,6.875rem)) {
     .what__img {
-      padding-top: calc(.625rem + 6.25 * (100vw - 48.06125rem)/ 29.43875)
+      padding-top: calc(2.5rem + 4.375 * (100vw - 48.06125rem)/ 29.43875)
+    }
+  }
+  @supports (padding-bottom:clamp(2.5rem ,-4.6425576409rem + 14.8613646979vw ,6.875rem)) {
+    .what__img {
+      padding-bottom: clamp(2.5rem ,-4.6425576409rem + 14.8613646979vw ,6.875rem)
+    }
+  }
+  @supports not (padding-bottom:clamp(2.5rem ,-4.6425576409rem + 14.8613646979vw ,6.875rem)) {
+    .what__img {
+      padding-bottom: calc(2.5rem + 4.375 * (100vw - 48.06125rem)/ 29.43875)
     }
   }
   @supports (font-size:clamp(1.625rem ,-1.742205745rem + 7.006071929vw ,3.6875rem)) {
