@@ -403,9 +403,6 @@ body {
   top: 0;
   left: 0
 }
-.hero__social {
-  margin-top: -8.125rem
-}
 .social__list {
   display: flex;
   justify-content: space-between;
@@ -896,6 +893,9 @@ body {
   .hero__actions {
     gap: 1.25rem
   }
+  .hero__social {
+    margin-top: -7.5rem
+  }
   .social__list {
     padding-top: 3.9375rem
   }
@@ -1064,6 +1064,9 @@ body {
   }
   .hero__actions {
     gap: .625rem
+  }
+  .hero__social {
+    margin-top: -10.625rem
   }
   .social__list {
     padding-top: 1.25rem
@@ -1676,6 +1679,16 @@ body {
   @supports not (gap:clamp(0.625rem ,0.4144736842rem + 1.0526315789vw ,1.25rem)) {
     .hero__actions {
       gap: calc(.625rem + .625 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (margin-top:clamp(-10.625rem ,-11.6776315789rem + 5.2631578947vw ,-7.5rem)) {
+    .hero__social {
+      margin-top: clamp(-10.625rem ,-11.6776315789rem + 5.2631578947vw ,-7.5rem)
+    }
+  }
+  @supports not (margin-top:clamp(-10.625rem ,-11.6776315789rem + 5.2631578947vw ,-7.5rem)) {
+    .hero__social {
+      margin-top: calc(-10.625rem + 3.125 * (100vw - 20rem)/ 59.375)
     }
   }
   @supports (padding-top:clamp(1.25rem ,0.3447368421rem + 4.5263157895vw ,3.9375rem)) {
