@@ -346,8 +346,7 @@ body {
   align-items: start;
   grid-template-columns: 45% 55%;
   color: #fff;
-  gap: 2.5rem;
-  padding-bottom: 3.125rem
+  gap: 2.5rem
 }
 .hero__body {
   display: flex;
@@ -787,7 +786,7 @@ body {
     padding-bottom: 9.375rem
   }
   .strip {
-    margin-top: -9.375rem
+    margin-top: -8.125rem
   }
   .strip {
     margin-bottom: 6.25rem
@@ -842,6 +841,9 @@ body {
   }
   .page__hero {
     padding-top: 7.5rem
+  }
+  .page__hero {
+    padding-bottom: 9.375rem
   }
   .page__what {
     padding-top: 4.6875rem
@@ -1011,6 +1013,9 @@ body {
   }
   .page__hero {
     padding-top: 4.375rem
+  }
+  .page__hero {
+    padding-bottom: 1.875rem
   }
   .page__what {
     padding-top: 1.875rem
@@ -1494,6 +1499,16 @@ body {
   @supports not (padding-top:clamp(4.375rem ,3.3223684211rem + 5.2631578947vw ,7.5rem)) {
     .page__hero {
       padding-top: calc(4.375rem + 3.125 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (padding-bottom:clamp(1.875rem ,-0.6513157895rem + 12.6315789474vw ,9.375rem)) {
+    .page__hero {
+      padding-bottom: clamp(1.875rem ,-.6513157895rem + 12.6315789474vw ,9.375rem)
+    }
+  }
+  @supports not (padding-bottom:clamp(1.875rem ,-0.6513157895rem + 12.6315789474vw ,9.375rem)) {
+    .page__hero {
+      padding-bottom: calc(1.875rem + 7.5 * (100vw - 20rem)/ 59.375)
     }
   }
   @supports (padding-top:clamp(1.875rem ,0.9276315789rem + 4.7368421053vw ,4.6875rem)) {
@@ -2111,14 +2126,14 @@ body {
   }
 }
 @media (min-width:61.24875em) and (max-width:77.5em) {
-  @supports (margin-top:clamp(-9.375rem ,35.333099675rem + -57.6878705484vw ,0.0000000625rem)) {
+  @supports (margin-top:clamp(-8.125rem ,30.6220197581rem + -49.9961545266vw ,0.0000000625rem)) {
     .strip {
-      margin-top: clamp(-9.375rem ,35.333099675rem + -57.6878705484vw ,.0000000625rem)
+      margin-top: clamp(-8.125rem ,30.6220197581rem + -49.9961545266vw ,.0000000625rem)
     }
   }
-  @supports not (margin-top:clamp(-9.375rem ,35.333099675rem + -57.6878705484vw ,0.0000000625rem)) {
+  @supports not (margin-top:clamp(-8.125rem ,30.6220197581rem + -49.9961545266vw ,0.0000000625rem)) {
     .strip {
-      margin-top: calc(.0000000625rem + -9.3750000625 * (100vw - 61.24875rem)/ 16.25125)
+      margin-top: calc(.0000000625rem + -8.1250000625 * (100vw - 61.24875rem)/ 16.25125)
     }
   }
   @supports (margin-bottom:clamp(1.875rem ,-14.6137797093rem + 26.9210060765vw ,6.25rem)) {
