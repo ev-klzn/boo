@@ -537,18 +537,6 @@ body {
   transform: translate(0,0);
   opacity: 1
 }
-.item-buy:nth-child(1)::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
-  top: -7rem;
-  left: -7rem;
-  background-color: hsla(1,100%,61%,.3);
-  -webkit-filter: blur(100px);
-  filter: blur(100px)
-}
 .item-buy:nth-child(2) {
   -webkit-transform: translate(10%,-10%);
   transform: translate(10%,-10%);
@@ -560,18 +548,6 @@ body {
   -webkit-transform: translate(0,0);
   transform: translate(0,0);
   opacity: 1
-}
-.item-buy:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
-  top: -7rem;
-  right: -7rem;
-  background-color: hsla(1,100%,61%,.3);
-  -webkit-filter: blur(100px);
-  filter: blur(100px)
 }
 .item-buy:nth-child(3) {
   -webkit-transform: translate(-10%,10%);
@@ -585,18 +561,6 @@ body {
   transform: translate(0,0);
   opacity: 1
 }
-.item-buy:nth-child(3)::before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
-  top: -7rem;
-  left: -7rem;
-  background-color: hsla(1,100%,61%,.3);
-  -webkit-filter: blur(100px);
-  filter: blur(100px)
-}
 .item-buy:nth-child(4) {
   -webkit-transform: translate(10%,10%);
   transform: translate(10%,10%);
@@ -608,18 +572,6 @@ body {
   -webkit-transform: translate(0,0);
   transform: translate(0,0);
   opacity: 1
-}
-.item-buy:nth-child(4)::before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
-  top: -7rem;
-  right: -7rem;
-  background-color: hsla(1,100%,61%,.3);
-  -webkit-filter: blur(100px);
-  filter: blur(100px)
 }
 .item-buy__title {
   font-family: "Work Sans";
@@ -766,18 +718,6 @@ body {
   transform: translate(0,0);
   opacity: 1
 }
-.tokenomics__item::before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
-  top: -7rem;
-  right: -7rem;
-  background-color: hsla(1,100%,61%,.3);
-  -webkit-filter: blur(100px);
-  filter: blur(100px)
-}
 .item-tokenomics {
   background-color: #fff;
   color: #000;
@@ -839,6 +779,68 @@ body {
     background-image: url(img/lines.svg);
     background-repeat: no-repeat;
     background-position: center
+  }
+}
+@media (min-width:61.99875em) {
+  .item-buy:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    top: -7rem;
+    left: -7rem;
+    background-color: hsla(1,100%,61%,.2);
+    -webkit-filter: blur(100px);
+    filter: blur(100px)
+  }
+  .item-buy:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    top: -7rem;
+    right: -7rem;
+    background-color: hsla(1,100%,61%,.2);
+    -webkit-filter: blur(100px);
+    filter: blur(100px)
+  }
+  .item-buy:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    top: -7rem;
+    left: -7rem;
+    background-color: hsla(1,100%,61%,.2);
+    -webkit-filter: blur(100px);
+    filter: blur(100px)
+  }
+  .item-buy:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    top: -7rem;
+    right: -7rem;
+    background-color: hsla(1,100%,61%,.2);
+    -webkit-filter: blur(100px);
+    filter: blur(100px)
+  }
+  .tokenomics__item::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    top: -7rem;
+    right: -7rem;
+    background-color: hsla(1,100%,61%,.2);
+    -webkit-filter: blur(100px);
+    filter: blur(100px)
   }
 }
 @media (min-width:77.5em) {
