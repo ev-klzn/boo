@@ -412,9 +412,7 @@ body {
   row-gap: .625rem;
   -webkit-column-gap: .9375rem;
   -moz-column-gap: .9375rem;
-  column-gap: .9375rem;
-  padding-left: 1.5625rem;
-  padding-right: 1.5625rem
+  column-gap: .9375rem
 }
 .social__item {
   border-radius: 50%;
@@ -1018,7 +1016,7 @@ body {
     padding-top: .0000000625rem
   }
   .page__buy {
-    padding-bottom: 1.875rem
+    padding-bottom: 3.75rem
   }
   .page__booswap {
     padding-bottom: 1.875rem
@@ -1426,7 +1424,7 @@ body {
 }
 @media (max-width:29.93625em) {
   .social__item {
-    width: 2rem
+    width: 2.5rem
   }
 }
 @media (max-width:25.31125em) {
@@ -1535,14 +1533,14 @@ body {
       padding-top: calc(.0000000625rem + 4.6874999375 * (100vw - 20rem)/ 59.375)
     }
   }
-  @supports (padding-bottom:clamp(1.875rem ,0.9276315789rem + 4.7368421053vw ,4.6875rem)) {
+  @supports (padding-bottom:clamp(3.75rem ,3.4342105263rem + 1.5789473684vw ,4.6875rem)) {
     .page__buy {
-      padding-bottom: clamp(1.875rem ,.9276315789rem + 4.7368421053vw ,4.6875rem)
+      padding-bottom: clamp(3.75rem ,3.4342105263rem + 1.5789473684vw ,4.6875rem)
     }
   }
-  @supports not (padding-bottom:clamp(1.875rem ,0.9276315789rem + 4.7368421053vw ,4.6875rem)) {
+  @supports not (padding-bottom:clamp(3.75rem ,3.4342105263rem + 1.5789473684vw ,4.6875rem)) {
     .page__buy {
-      padding-bottom: calc(1.875rem + 2.8125 * (100vw - 20rem)/ 59.375)
+      padding-bottom: calc(3.75rem + .9375 * (100vw - 20rem)/ 59.375)
     }
   }
   @supports (padding-bottom:clamp(1.875rem ,0.9276315789rem + 4.7368421053vw ,4.6875rem)) {
@@ -2122,14 +2120,14 @@ body {
   }
 }
 @media (min-width:29.93625em) and (max-width:77.5em) {
-  @supports (width:clamp(2rem ,-1.4616567239rem + 11.5634280308vw ,7.5rem)) {
+  @supports (width:clamp(2.5rem ,-0.6469606581rem + 10.5122073007vw ,7.5rem)) {
     .social__item {
-      width: clamp(2rem ,-1.4616567239rem + 11.5634280308vw ,7.5rem)
+      width: clamp(2.5rem ,-.6469606581rem + 10.5122073007vw ,7.5rem)
     }
   }
-  @supports not (width:clamp(2rem ,-1.4616567239rem + 11.5634280308vw ,7.5rem)) {
+  @supports not (width:clamp(2.5rem ,-0.6469606581rem + 10.5122073007vw ,7.5rem)) {
     .social__item {
-      width: calc(2rem + 5.5 * (100vw - 29.93625rem)/ 47.56375)
+      width: calc(2.5rem + 5 * (100vw - 29.93625rem)/ 47.56375)
     }
   }
 }
