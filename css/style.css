@@ -346,7 +346,8 @@ body {
   align-items: start;
   grid-template-columns: 45% 55%;
   color: #fff;
-  gap: 2.5rem
+  gap: 2.5rem;
+  padding-bottom: 3.125rem
 }
 .hero__body {
   display: flex;
@@ -875,9 +876,6 @@ body {
   .subtitle {
     font-size: 7.75rem
   }
-  .hero__container {
-    padding-bottom: 4.375rem
-  }
   .hero__body {
     gap: 2.8125rem
   }
@@ -1046,9 +1044,6 @@ body {
   }
   .subtitle {
     font-size: 2.25rem
-  }
-  .hero__container {
-    padding-bottom: 3.75rem
   }
   .hero__body {
     gap: 1.875rem
@@ -1609,16 +1604,6 @@ body {
   @supports not (font-size:clamp(2.25rem ,0.3973684211rem + 9.2631578947vw ,7.75rem)) {
     .subtitle {
       font-size: calc(2.25rem + 5.5 * (100vw - 20rem)/ 59.375)
-    }
-  }
-  @supports (padding-bottom:clamp(3.75rem ,3.5394736842rem + 1.0526315789vw ,4.375rem)) {
-    .hero__container {
-      padding-bottom: clamp(3.75rem ,3.5394736842rem + 1.0526315789vw ,4.375rem)
-    }
-  }
-  @supports not (padding-bottom:clamp(3.75rem ,3.5394736842rem + 1.0526315789vw ,4.375rem)) {
-    .hero__container {
-      padding-bottom: calc(3.75rem + .625 * (100vw - 20rem)/ 59.375)
     }
   }
   @supports (gap:clamp(1.875rem ,1.5592105263rem + 1.5789473684vw ,2.8125rem)) {
