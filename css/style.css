@@ -239,6 +239,9 @@ body {
   background: linear-gradient(270deg,#280808 0,#8e1d1c 28.05%,#280808 100%);
   box-shadow: 0 9px 0 0 #000
 }
+.footer__container:nth-child(2) {
+  border-top: 2px solid rgba(255,255,255,.2)
+}
 .footer__column {
   position: relative;
   z-index: 5;
@@ -275,6 +278,7 @@ body {
   z-index: 5
 }
 .footer__copy {
+  padding-top: 1.5625rem;
   opacity: .2;
   font-size: 1.25rem
 }
