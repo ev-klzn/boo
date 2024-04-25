@@ -905,6 +905,9 @@ body {
   .footer__decor-img {
     max-width: 2.5rem
   }
+  .footer__social {
+    padding-bottom: .0000000625rem
+  }
   .footer__img {
     max-width: 25rem
   }
@@ -1067,6 +1070,9 @@ body {
   }
   .footer__decor-img {
     max-width: 2.5rem
+  }
+  .footer__social {
+    padding-bottom: 1.25rem
   }
   .footer__img {
     max-width: 18.75rem
@@ -1561,6 +1567,16 @@ body {
   @supports not (max-width:clamp(2.5rem ,2.5rem + 0vw ,2.5rem)) {
     .footer__decor-img {
       max-width: calc(2.5rem + 0 * (100vw - 20rem)/ 59.375)
+    }
+  }
+  @supports (padding-bottom:clamp(0.0000000625rem ,1.6710526105rem + -2.1052630526vw ,1.25rem)) {
+    .footer__social {
+      padding-bottom: clamp(.0000000625rem ,1.6710526105rem + -2.1052630526vw ,1.25rem)
+    }
+  }
+  @supports not (padding-bottom:clamp(0.0000000625rem ,1.6710526105rem + -2.1052630526vw ,1.25rem)) {
+    .footer__social {
+      padding-bottom: calc(1.25rem + -1.2499999375 * (100vw - 20rem)/ 59.375)
     }
   }
   @supports (max-width:clamp(18.75rem ,16.6447368421rem + 10.5263157895vw ,25rem)) {
