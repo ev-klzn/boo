@@ -521,8 +521,8 @@ body {
   box-shadow: -11px -9px 4px 0 rgba(0,0,0,.25) inset,7.667px 7.667px 0 0 #000
 }
 .item-buy:nth-child(1) {
-  -webkit-transform: translate(-100%,-100%);
-  transform: translate(-100%,-100%);
+  -webkit-transform: translate(-10%,-10%);
+  transform: translate(-10%,-10%);
   opacity: 0;
   transition: all .2s
 }
@@ -533,8 +533,8 @@ body {
   opacity: 1
 }
 .item-buy:nth-child(2) {
-  -webkit-transform: translate(100%,-100%);
-  transform: translate(100%,-100%);
+  -webkit-transform: translate(10%,-10%);
+  transform: translate(10%,-10%);
   opacity: 0;
   transition: all .2s
 }
@@ -545,8 +545,8 @@ body {
   opacity: 1
 }
 .item-buy:nth-child(3) {
-  -webkit-transform: translate(-100%,100%);
-  transform: translate(-100%,100%);
+  -webkit-transform: translate(-10%,10%);
+  transform: translate(-10%,10%);
   opacity: 0;
   transition: all .2s
 }
@@ -557,8 +557,8 @@ body {
   opacity: 1
 }
 .item-buy:nth-child(4) {
-  -webkit-transform: translate(100%,100%);
-  transform: translate(100%,100%);
+  -webkit-transform: translate(10%,10%);
+  transform: translate(10%,10%);
   opacity: 0;
   transition: all .2s
 }
@@ -690,8 +690,8 @@ body {
   align-items: end
 }
 .tokenomics__item:nth-child(1) {
-  -webkit-transform: translate(-100%);
-  transform: translate(-100%);
+  -webkit-transform: translate(-10%);
+  transform: translate(-10%);
   opacity: 0;
   transition: all .2s
 }
@@ -702,8 +702,8 @@ body {
   opacity: 1
 }
 .tokenomics__item:nth-child(2) {
-  -webkit-transform: translate(100%);
-  transform: translate(100%);
+  -webkit-transform: translate(10%);
+  transform: translate(10%);
   opacity: 0;
   transition: all .2s
 }
