@@ -886,7 +886,7 @@ body {
   .what__img {
     padding-bottom: 6.875rem
   }
-  .what__label {
+  .what__title {
     font-size: 3.625rem
   }
   .buy-list__list {
@@ -1352,7 +1352,7 @@ body {
   .what__img {
     padding-bottom: 2.5rem
   }
-  .what__label {
+  .what__title {
     font-size: 1.5rem
   }
   .buy-list__list {
@@ -2180,12 +2180,12 @@ body {
     }
   }
   @supports (font-size:clamp(1.5rem ,-1.9692422827rem + 7.218377139vw ,3.625rem)) {
-    .what__label {
+    .what__title {
       font-size: clamp(1.5rem ,-1.9692422827rem + 7.218377139vw ,3.625rem)
     }
   }
   @supports not (font-size:clamp(1.5rem ,-1.9692422827rem + 7.218377139vw ,3.625rem)) {
-    .what__label {
+    .what__title {
       font-size: calc(1.5rem + 2.125 * (100vw - 48.06125rem)/ 29.43875)
     }
   }
