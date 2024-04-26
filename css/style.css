@@ -141,7 +141,7 @@ body {
   pointer-events: none;
   -webkit-transform: rotate(-4deg);
   transform: rotate(-4deg);
-  padding-left: 1.25rem;
+  padding-left: .625rem;
   padding-right: 1.25rem;
   z-index: 5;
   width: 100%
@@ -452,7 +452,8 @@ body {
 }
 .what__body {
   flex: 1 0 45%;
-  position: relative
+  position: relative;
+  transition: all .5s ease
 }
 .what .ellipse {
   -webkit-filter: blur(150px);
@@ -461,7 +462,16 @@ body {
 .what__label {
   position: relative;
   font-family: Ahsing;
-  line-height: 1.35
+  line-height: 1.35;
+  -webkit-transform: translate(10%,0);
+  transform: translate(10%,0);
+  opacity: 0
+}
+.what__label._watcher-view {
+  transition: all .5s ease .8s;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);
+  opacity: 1
 }
 .what__decor {
   position: absolute;
@@ -490,7 +500,7 @@ body {
   transition: all .2s
 }
 .what__blok._watcher-view {
-  transition: all .8s ease .5s;
+  transition: all .8s ease 1s;
   -webkit-transform: translate(0,0);
   transform: translate(0,0);
   opacity: 1
