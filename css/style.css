@@ -775,12 +775,14 @@ body {
   .buy {
     background-image: url(img/lines.svg);
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
+    background-size: auto
   }
   .booswap {
     background-image: url(img/lines.svg);
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
+    background-size: auto
   }
 }
 @media (min-width:61.99875em) {
