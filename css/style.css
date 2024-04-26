@@ -141,7 +141,7 @@ body {
   pointer-events: none;
   -webkit-transform: rotate(-4deg);
   transform: rotate(-4deg);
-  padding-left: .625rem;
+  padding-left: 0;
   padding-right: 1.25rem;
   z-index: 5;
   width: 100%
@@ -462,15 +462,11 @@ body {
 .what__label {
   position: relative;
   font-family: Ahsing;
-  line-height: 1.35;
-  -webkit-transform: translate(10%,0);
-  transform: translate(10%,0);
+  line-height: 1.4;
   opacity: 0
 }
 .what__label._watcher-view {
-  transition: all .5s ease .8s;
-  -webkit-transform: translate(0,0);
-  transform: translate(0,0);
+  transition: all .5s ease .5s;
   opacity: 1
 }
 .what__decor {
@@ -891,7 +887,7 @@ body {
     padding-bottom: 6.875rem
   }
   .what__label {
-    font-size: 3.6875rem
+    font-size: 3.625rem
   }
   .buy-list__list {
     gap: 12.5rem
@@ -1357,7 +1353,7 @@ body {
     padding-bottom: 2.5rem
   }
   .what__label {
-    font-size: 1.625rem
+    font-size: 1.5rem
   }
   .buy-list__list {
     gap: 3.125rem
@@ -2183,14 +2179,14 @@ body {
       padding-bottom: calc(2.5rem + 4.375 * (100vw - 48.06125rem)/ 29.43875)
     }
   }
-  @supports (font-size:clamp(1.625rem ,-1.742205745rem + 7.006071929vw ,3.6875rem)) {
+  @supports (font-size:clamp(1.5rem ,-1.9692422827rem + 7.218377139vw ,3.625rem)) {
     .what__label {
-      font-size: clamp(1.625rem ,-1.742205745rem + 7.006071929vw ,3.6875rem)
+      font-size: clamp(1.5rem ,-1.9692422827rem + 7.218377139vw ,3.625rem)
     }
   }
-  @supports not (font-size:clamp(1.625rem ,-1.742205745rem + 7.006071929vw ,3.6875rem)) {
+  @supports not (font-size:clamp(1.5rem ,-1.9692422827rem + 7.218377139vw ,3.625rem)) {
     .what__label {
-      font-size: calc(1.625rem + 2.0625 * (100vw - 48.06125rem)/ 29.43875)
+      font-size: calc(1.5rem + 2.125 * (100vw - 48.06125rem)/ 29.43875)
     }
   }
   @supports (gap:clamp(3.125rem ,-12.180480659rem + 31.8457814955vw ,12.5rem)) {
