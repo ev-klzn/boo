@@ -308,6 +308,9 @@ body {
 [class*=ellipse-decor] {
   width: 14.625rem
 }
+.lines {
+  display: none
+}
 .strip {
   border: .5rem solid #000;
   background: var(--Linear,linear-gradient(270deg,#280808 0,#8e1d1c 33.23%,#280808 100%));
@@ -501,6 +504,9 @@ body {
   font-size: 1.375rem;
   line-height: 140%;
   margin-top: -3.125rem
+}
+.buy {
+  position: relative
 }
 .buy__container {
   position: relative;
@@ -772,17 +778,19 @@ body {
   font-weight: 700
 }
 @media (min-width:47.99875em) {
-  .buy {
-    background-image: url(img/lines.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto
+  .lines {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    opacity: 0;
+    transition: all 1s ease
   }
-  .booswap {
-    background-image: url(img/lines.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto
+  .lines._watcher-view {
+    transition: all 1s ease 2.5s;
+    opacity: 1
   }
 }
 @media (min-width:61.99875em) {
