@@ -108,6 +108,8 @@ body {
   padding: 0 .9375rem
 }
 .button {
+  position: relative;
+  z-index: 100;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -212,7 +214,7 @@ body {
   position: fixed;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(0,0,0,.8784313725)
+  background-color: #000
 }
 .header__container {
   position: relative;
@@ -643,14 +645,12 @@ body {
   border-radius: 2.1875rem;
   -webkit-transform: translate(0,10%);
   transform: translate(0,10%);
-  opacity: 0;
   transition: all .2s
 }
 .booswap__img-content._watcher-view {
   transition: all .8s ease .3s;
   -webkit-transform: translate(0,0);
-  transform: translate(0,0);
-  opacity: 1
+  transform: translate(0,0)
 }
 .booswap img:nth-child(1) {
   position: relative;
@@ -1200,7 +1200,7 @@ body {
     max-width: 4.6875rem
   }
   .booswap img:nth-child(5) {
-    max-width: 4.6875rem
+    max-width: .0000000625rem
   }
   .tokenomics__list {
     gap: 1.25rem
@@ -1222,11 +1222,6 @@ body {
   }
   .item-tokenomics__row *:nth-child(2) {
     font-size: 1.125rem
-  }
-}
-@media (max-width:112.5em) {
-  .hero__decor {
-    display: none
   }
 }
 @media (max-width:79.375em) {
@@ -1277,18 +1272,6 @@ body {
   .social__list {
     justify-content: center
   }
-  .booswap img:nth-child(2) {
-    display: none
-  }
-  .booswap img:nth-child(3) {
-    display: none
-  }
-  .booswap img:nth-child(4) {
-    display: none
-  }
-  .booswap img:nth-child(5) {
-    display: none
-  }
   .tokenomics__list {
     grid-template-columns: 1fr
   }
@@ -1305,7 +1288,7 @@ body {
 }
 @media (max-width:61.24875em) {
   .strip {
-    margin-bottom: 1.875rem
+    margin-bottom: 2.5rem
   }
   .social__list {
     padding-top: .9375rem
@@ -1484,6 +1467,18 @@ body {
   .item-buy__swap-text {
     text-align: center
   }
+  .booswap img:nth-child(2) {
+    display: none
+  }
+  .booswap img:nth-child(3) {
+    display: none
+  }
+  .booswap img:nth-child(4) {
+    display: none
+  }
+  .booswap img:nth-child(5) {
+    display: none
+  }
   .item-tokenomics {
     text-align: center
   }
@@ -1526,6 +1521,11 @@ body {
 @media (max-width:25.31125em) {
   .header__container {
     grid-template-columns: auto 1fr auto
+  }
+}
+@media (max-width:9.9897959184em) {
+  .hero__decor {
+    display: none
   }
 }
 @media (min-width:20em) and (max-width:79.375em) {
@@ -1993,14 +1993,14 @@ body {
       max-width: calc(4.6875rem + 12.1875 * (100vw - 20rem)/ 59.375)
     }
   }
-  @supports (max-width:clamp(4.6875rem ,0.5822368421rem + 20.5263157895vw ,16.875rem)) {
+  @supports (max-width:clamp(0.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)) {
     .booswap img:nth-child(5) {
-      max-width: clamp(4.6875rem ,.5822368421rem + 20.5263157895vw ,16.875rem)
+      max-width: clamp(.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)
     }
   }
-  @supports not (max-width:clamp(4.6875rem ,0.5822368421rem + 20.5263157895vw ,16.875rem)) {
+  @supports not (max-width:clamp(0.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)) {
     .booswap img:nth-child(5) {
-      max-width: calc(4.6875rem + 12.1875 * (100vw - 20rem)/ 59.375)
+      max-width: calc(.0000000625rem + 16.8749999375 * (100vw - 20rem)/ 59.375)
     }
   }
   @supports (gap:clamp(1.25rem ,-0.75rem + 10vw ,7.1875rem)) {
@@ -2204,14 +2204,14 @@ body {
   }
 }
 @media (min-width:61.24875em) and (max-width:77.5em) {
-  @supports (margin-bottom:clamp(1.875rem ,-14.6137797093rem + 26.9210060765vw ,6.25rem)) {
+  @supports (margin-bottom:clamp(2.5rem ,-11.6332397508rem + 23.0751480655vw ,6.25rem)) {
     .strip {
-      margin-bottom: clamp(1.875rem ,-14.6137797093rem + 26.9210060765vw ,6.25rem)
+      margin-bottom: clamp(2.5rem ,-11.6332397508rem + 23.0751480655vw ,6.25rem)
     }
   }
-  @supports not (margin-bottom:clamp(1.875rem ,-14.6137797093rem + 26.9210060765vw ,6.25rem)) {
+  @supports not (margin-bottom:clamp(2.5rem ,-11.6332397508rem + 23.0751480655vw ,6.25rem)) {
     .strip {
-      margin-bottom: calc(1.875rem + 4.375 * (100vw - 61.24875rem)/ 16.25125)
+      margin-bottom: calc(2.5rem + 3.75 * (100vw - 61.24875rem)/ 16.25125)
     }
   }
   @supports (padding-top:clamp(0.9375rem ,-10.3690918006rem + 18.4601184524vw ,3.9375rem)) {
