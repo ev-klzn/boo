@@ -643,6 +643,7 @@ body {
   aspect-ratio: 597/959;
   margin: auto;
   border-radius: 2.1875rem;
+  overflow: hidden;
   -webkit-transform: translate(0,10%);
   transform: translate(0,10%);
   transition: all .2s
@@ -650,13 +651,13 @@ body {
 .booswap__img-content._watcher-view {
   transition: all .8s ease .3s;
   -webkit-transform: translate(0,0);
-  transform: translate(0,0)
+  transform: translate(0,0);
+  border-radius: 2.1875rem;
+  overflow: hidden
 }
 .booswap img:nth-child(1) {
   position: relative;
-  z-index: 5;
-  border-radius: 1.875rem;
-  overflow: hidden
+  z-index: 5
 }
 .booswap img:nth-child(2) {
   aspect-ratio: 268/239;
