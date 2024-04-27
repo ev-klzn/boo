@@ -428,13 +428,15 @@ body {
   -webkit-filter: drop-shadow(4px 7px 0 #000);
   filter: drop-shadow(4px 7px 0 #000);
   transition: all .2s ease;
-  -webkit-transform: translate(-300%,0) rotate(-720deg);
-  transform: translate(-300%,0) rotate(-720deg)
+  -webkit-transform: translate(-175%,0) rotate(-630deg);
+  transform: translate(-175%,0) rotate(-630deg);
+  opacity: 0
 }
 .social__item._watcher-view {
   -webkit-transform: translate(0,0) rotate(0);
   transform: translate(0,0) rotate(0);
-  transition: all .3s ease
+  transition: all .3s ease;
+  opacity: 1
 }
 .social__social__link {
   aspect-ratio: 1/1
