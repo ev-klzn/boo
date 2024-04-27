@@ -674,7 +674,7 @@ body {
   aspect-ratio: 268/239;
   position: absolute;
   top: -20%;
-  left: 12%;
+  left: 9%;
   z-index: 6
 }
 .booswap img:nth-child(3) {
@@ -693,7 +693,7 @@ body {
   aspect-ratio: 270/121;
   position: absolute;
   bottom: -20%;
-  right: 12%;
+  right: 9%;
   z-index: 6
 }
 .tokenomics__img {
@@ -1207,13 +1207,13 @@ body {
     max-width: 4.6875rem
   }
   .booswap img:nth-child(2) {
-    max-width: 4.6875rem
+    max-width: .0000000625rem
   }
   .booswap img:nth-child(3) {
-    max-width: 4.6875rem
+    max-width: .0000000625rem
   }
   .booswap img:nth-child(4) {
-    max-width: 4.6875rem
+    max-width: .0000000625rem
   }
   .booswap img:nth-child(5) {
     max-width: .0000000625rem
@@ -1243,6 +1243,18 @@ body {
 @media (max-width:79.375em) {
   .footer__text {
     opacity: 1
+  }
+  .booswap img:nth-child(2) {
+    left: 6%
+  }
+  .booswap img:nth-child(3) {
+    right: 10%
+  }
+  .booswap img:nth-child(4) {
+    left: 10%
+  }
+  .booswap img:nth-child(5) {
+    right: 7%
   }
 }
 @media (max-width:73.75em) {
@@ -1287,6 +1299,18 @@ body {
   }
   .social__list {
     justify-content: center
+  }
+  .booswap img:nth-child(2) {
+    display: none
+  }
+  .booswap img:nth-child(3) {
+    display: none
+  }
+  .booswap img:nth-child(4) {
+    display: none
+  }
+  .booswap img:nth-child(5) {
+    display: none
   }
   .tokenomics__list {
     grid-template-columns: 1fr
@@ -1482,18 +1506,6 @@ body {
   }
   .item-buy__swap-text {
     text-align: center
-  }
-  .booswap img:nth-child(2) {
-    display: none
-  }
-  .booswap img:nth-child(3) {
-    display: none
-  }
-  .booswap img:nth-child(4) {
-    display: none
-  }
-  .booswap img:nth-child(5) {
-    display: none
   }
   .item-tokenomics {
     text-align: center
@@ -1979,34 +1991,34 @@ body {
       max-width: calc(4.6875rem + 1.5625 * (100vw - 20rem)/ 59.375)
     }
   }
-  @supports (max-width:clamp(4.6875rem ,0.5822368421rem + 20.5263157895vw ,16.875rem)) {
+  @supports (max-width:clamp(0.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)) {
     .booswap img:nth-child(2) {
-      max-width: clamp(4.6875rem ,.5822368421rem + 20.5263157895vw ,16.875rem)
+      max-width: clamp(.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)
     }
   }
-  @supports not (max-width:clamp(4.6875rem ,0.5822368421rem + 20.5263157895vw ,16.875rem)) {
+  @supports not (max-width:clamp(0.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)) {
     .booswap img:nth-child(2) {
-      max-width: calc(4.6875rem + 12.1875 * (100vw - 20rem)/ 59.375)
+      max-width: calc(.0000000625rem + 16.8749999375 * (100vw - 20rem)/ 59.375)
     }
   }
-  @supports (max-width:clamp(4.6875rem ,0.5822368421rem + 20.5263157895vw ,16.875rem)) {
+  @supports (max-width:clamp(0.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)) {
     .booswap img:nth-child(3) {
-      max-width: clamp(4.6875rem ,.5822368421rem + 20.5263157895vw ,16.875rem)
+      max-width: clamp(.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)
     }
   }
-  @supports not (max-width:clamp(4.6875rem ,0.5822368421rem + 20.5263157895vw ,16.875rem)) {
+  @supports not (max-width:clamp(0.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)) {
     .booswap img:nth-child(3) {
-      max-width: calc(4.6875rem + 12.1875 * (100vw - 20rem)/ 59.375)
+      max-width: calc(.0000000625rem + 16.8749999375 * (100vw - 20rem)/ 59.375)
     }
   }
-  @supports (max-width:clamp(4.6875rem ,0.5822368421rem + 20.5263157895vw ,16.875rem)) {
+  @supports (max-width:clamp(0.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)) {
     .booswap img:nth-child(4) {
-      max-width: clamp(4.6875rem ,.5822368421rem + 20.5263157895vw ,16.875rem)
+      max-width: clamp(.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)
     }
   }
-  @supports not (max-width:clamp(4.6875rem ,0.5822368421rem + 20.5263157895vw ,16.875rem)) {
+  @supports not (max-width:clamp(0.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)) {
     .booswap img:nth-child(4) {
-      max-width: calc(4.6875rem + 12.1875 * (100vw - 20rem)/ 59.375)
+      max-width: calc(.0000000625rem + 16.8749999375 * (100vw - 20rem)/ 59.375)
     }
   }
   @supports (max-width:clamp(0.0000000625rem ,-5.6842104428rem + 28.4210525263vw ,16.875rem)) {
