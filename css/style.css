@@ -435,7 +435,7 @@ body {
 .social__item._watcher-view {
   -webkit-transform: translate(0,0) rotate(0);
   transform: translate(0,0) rotate(0);
-  transition: all .3s ease;
+  transition: all .5s ease;
   opacity: 1
 }
 .social__social__link {
