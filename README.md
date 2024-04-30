@@ -1,3 +1,3 @@
 # boo
 
-https://ev-klzn.github.io/boo/
+https://ev-klzn.com/boo/
