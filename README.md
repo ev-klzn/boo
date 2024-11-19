@@ -1,3 +1,3 @@
 # boo
 
-https://ev-klzn.com/boo/
+https://webintersol.com/boo/
